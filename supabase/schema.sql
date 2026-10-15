@@ -100,13 +100,9 @@ with check (
   and status = '待承接'
 );
 
--- This owner-only update policy is deliberately limited to ownership. Production
--- should revoke direct status updates and route state transitions through
--- carefully reviewed transactional RPC functions.
-create policy "tasks_update_owner"
-on public.tasks for update to authenticated
-using (owner_id = auth.uid())
-with check (owner_id = auth.uid());
+-- No direct client UPDATE policy is granted intentionally. Add carefully reviewed
+-- transactional RPC functions for each permitted state transition before enabling
+-- updates; this prevents clients from changing runner_id/status arbitrarily.
 
 -- Events can be read only by task participants. Inserts are restricted to the actor,
 -- but production should write events from trusted transactional functions to prevent spoofed history.
@@ -118,16 +114,8 @@ using (exists (
     and (t.owner_id = auth.uid() or t.runner_id = auth.uid() or t.applicant_id = auth.uid())
 ));
 
-create policy "events_insert_actor"
-on public.task_events for insert to authenticated
-with check (
-  actor_id = auth.uid()
-  and exists (
-    select 1 from public.tasks t
-    where t.id = task_id
-      and (t.owner_id = auth.uid() or t.runner_id = auth.uid() or t.applicant_id = auth.uid())
-  )
-);
+-- No direct client INSERT policy is granted for events. Trusted transactional RPC
+-- functions should append events atomically with each accepted state transition.
 
 -- Reports: reporter can create and read their own reports. No client-side policy grants
 -- general read access or review updates. Add reviewer access only after defining a
@@ -141,8 +129,7 @@ on public.reports for select to authenticated
 using (reporter_id = auth.uid());
 
 -- IMPORTANT PRODUCTION TODO:
--- 1. Revoke direct client UPDATE on task status/runner/applicant columns.
--- 2. Add transactional SECURITY DEFINER RPC functions with fixed search_path for
+-- 1. Add transactional SECURITY DEFINER RPC functions with fixed search_path for
 --    apply_task, accept_applicant, cancel_task, submit_completion, confirm_completion,
 --    open_dispute and append_task_event.
 -- 3. Enforce valid state transitions and single-runner acceptance atomically.
