@@ -1,14 +1,23 @@
 # 校园跑腿互助平台 Campus Errand
 
+> **🌐 在线体验（公开访问）**
+>
+> **[https://mingzior.github.io/campus-errand-platform/](https://mingzior.github.io/campus-errand-platform/)**
+>
+> 网站通过 GitHub Pages 免费托管。仓库为公开仓库，任何人均可直接打开上方链接访问，无需登录 GitHub 或申请权限。
+
 一个面向校园场景的跑腿互助平台概念项目，目标是帮助学生发布和承接校园内的日常小任务，并通过订单记录与信用机制建立可信赖的互助社区。
 
 ## 在线预览
 
-GitHub Pages 部署成功后，网站地址通常为：
+**访问网站：** [校园搭把手 Campus Errand](https://mingzior.github.io/campus-errand-platform/)
 
-https://mingzior.github.io/campus-errand-platform/
+如果网页暂时无法打开，请查看仓库的 [Actions 部署状态](https://github.com/Mingzior/campus-errand-platform/actions)。GitHub Pages 更新可能需要短暂等待。
 
-部署状态请查看仓库的 **Actions** 页面。首次部署可能需要在 GitHub Pages 设置中选择 **GitHub Actions** 作为发布来源。
+## 项目文档
+
+- [产品需求文档 PRD](docs/PRD.md)
+- [需求调研报告](docs/需求调研报告.md)
 
 ## 当前版本
 
@@ -16,10 +25,9 @@ https://mingzior.github.io/campus-errand-platform/
 - 任务大厅的示例任务卡片
 - 发布任务、接单、完成任务的流程说明
 - 信用体系与安全规则说明
-- 完整产品需求文档：[`docs/PRD.md`](docs/PRD.md)
 - GitHub Pages 自动部署工作流
 
-> 当前页面属于产品概念展示与静态原型，不连接真实后端。任务卡片为示例数据，登录、真实发布/接单、支付、消息通知和信用计算尚未实现。请勿输入真实个人信息。
+> **当前版本说明：** 页面属于产品概念展示与静态原型，不连接真实后端。任务卡片为示例数据，登录、真实发布/接单、支付、消息通知和信用计算尚未实现。请勿输入真实个人信息。
 
 ## 本地预览
 
