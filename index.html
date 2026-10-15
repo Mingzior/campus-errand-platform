@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f7fb">
+  <meta name="description" content="校园跑腿互助平台：让校园小事更轻松，让每一次互助都有记录。">
+  <title>校园搭把手 · 校园跑腿互助平台</title>
+  <style>
+    :root{--ink:#182230;--muted:#667085;--brand:#5b57e8;--brand2:#ebeaff;--bg:#f7f8fc;--card:#fff;--line:#e7e9f1;--green:#16866b;--orange:#b96a19}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;line-height:1.6}
+    a{color:inherit;text-decoration:none}.wrap{width:min(1120px,calc(100% - 40px));margin:auto}.nav{display:flex;align-items:center;justify-content:space-between;padding:22px 0}.logo{display:flex;gap:10px;align-items:center;font-weight:800;font-size:19px;letter-spacing:-.4px}.logo-mark{display:grid;place-items:center;width:38px;height:38px;background:var(--brand);color:white;border-radius:13px;font-size:20px}.navlinks{display:flex;gap:26px;color:var(--muted);font-size:14px}.navlinks a:hover{color:var(--brand)}.nav-cta,.btn{border:0;border-radius:12px;padding:12px 18px;background:var(--brand);color:#fff;font-weight:700;cursor:pointer;display:inline-flex;justify-content:center;align-items:center;gap:8px}.nav-cta{padding:10px 15px;font-size:14px}.hero{padding:54px 0 48px;display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:48px}.eyebrow{display:inline-flex;align-items:center;gap:8px;padding:7px 12px;background:#eeedff;color:#4b47c8;border-radius:999px;font-size:13px;font-weight:700}.dot{width:7px;height:7px;background:#6b65f0;border-radius:50%}h1{font-size:clamp(38px,5.3vw,62px);line-height:1.12;letter-spacing:-2.2px;margin:20px 0}.gradient{color:var(--brand)}.hero p{font-size:17px;color:var(--muted);max-width:500px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin:28px 0 22px}.btn.secondary{background:#fff;color:var(--ink);border:1px solid var(--line)}.fine{font-size:12px!important;color:#858c9c!important}.visual{background:linear-gradient(145deg,#e9e8ff,#f6eefe 58%,#fff);border-radius:30px;padding:26px;min-height:390px;position:relative;overflow:hidden}.visual:before,.visual:after{content:"";position:absolute;border-radius:50%;border:1px solid #ffffffb8;width:270px;height:270px;right:-80px;top:-100px}.visual:after{width:190px;height:190px;right:-40px;top:-60px}.mini-card{position:relative;background:white;border:1px solid #ffffff;border-radius:18px;padding:17px;margin-bottom:13px;box-shadow:0 12px 36px #4237a00d;z-index:1}.mini-top{display:flex;justify-content:space-between;gap:10px;align-items:center}.pill{font-size:11px;border-radius:7px;padding:4px 8px;background:#eeedff;color:#514bd4;font-weight:700}.mini-card h3{margin:10px 0 4px;font-size:16px}.mini-card p{font-size:12px;margin:0;color:var(--muted)}.mini-bottom{display:flex;align-items:center;justify-content:space-between;margin-top:13px;font-size:12px;color:var(--muted)}.price{font-size:17px;color:var(--ink);font-weight:800}.avatar{display:inline-grid;place-items:center;width:25px;height:25px;border-radius:50%;background:#ffe6c7;margin-right:6px}.float-note{position:absolute;right:20px;bottom:19px;background:#fff;border-radius:14px;padding:12px 15px;box-shadow:0 10px 30px #312a5a17;font-size:12px;z-index:2}.float-note strong{color:var(--green);font-size:16px;display:block}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:10px 0 70px}.stat{background:#fff;border:1px solid var(--line);border-radius:16px;padding:19px 22px}.stat strong{display:block;font-size:23px;letter-spacing:-.5px}.stat span{font-size:13px;color:var(--muted)}section{padding:42px 0 60px}.section-head{text-align:center;max-width:660px;margin:0 auto 30px}.section-head h2{font-size:32px;letter-spacing:-1px;margin:0 0 10px}.section-head p{color:var(--muted);margin:0}.tasks{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.task{background:#fff;border:1px solid var(--line);border-radius:18px;padding:20px;transition:transform .2s,box-shadow .2s}.task:hover{transform:translateY(-3px);box-shadow:0 12px 28px #1d234008}.task .emoji{width:43px;height:43px;border-radius:13px;background:#f1f0ff;display:grid;place-items:center;font-size:22px}.task h3{font-size:16px;margin:15px 0 7px}.task p{font-size:13px;color:var(--muted);margin:0}.task-foot{border-top:1px solid var(--line);margin-top:17px;padding-top:14px;display:flex;justify-content:space-between;align-items:center;font-size:12px;color:var(--muted)}.task-foot strong{font-size:16px;color:var(--ink)}.tag{background:#e9f8f2;color:#16765f;border-radius:7px;padding:4px 8px;font-size:11px}.notice{margin-top:16px;padding:12px 14px;border-radius:12px;background:#fff7e9;color:#8b5b1b;font-size:12px}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.step{padding:22px;border:1px solid var(--line);background:white;border-radius:18px}.step-num{font-size:12px;color:var(--brand);font-weight:800;letter-spacing:1px}.step h3{margin:12px 0 6px}.step p{margin:0;color:var(--muted);font-size:14px}.trust{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:center;background:#efefff;border-radius:24px;padding:34px}.trust h2{font-size:30px;line-height:1.2;margin:0 0 12px}.trust p{color:#5f6380}.trust-list{display:grid;gap:12px}.trust-item{background:#fff;border-radius:13px;padding:13px 15px;display:flex;gap:12px;align-items:flex-start;font-size:13px}.check{width:25px;height:25px;display:grid;place-items:center;flex-shrink:0;border-radius:8px;background:#e6f8f1;color:var(--green);font-weight:800}.trust-item b{display:block;font-size:14px;margin-bottom:2px}.trust-item span{color:var(--muted)}.docs{display:grid;grid-template-columns:1fr 1fr;gap:16px}.doc{background:#fff;border:1px solid var(--line);border-radius:17px;padding:23px}.doc h3{margin:0 0 8px}.doc p{color:var(--muted);font-size:14px}.doc a{color:var(--brand);font-weight:700;font-size:14px}.cta{margin:36px 0 55px;background:#22234c;color:white;border-radius:24px;padding:36px;text-align:center}.cta h2{font-size:29px;margin:0 0 8px}.cta p{color:#d0d1e7;margin:0 0 20px}.cta .btn{background:white;color:#302e85}.footer{border-top:1px solid var(--line);padding:23px 0 32px;display:flex;justify-content:space-between;gap:15px;color:var(--muted);font-size:12px}.mobile-menu{display:none}
+    @media(max-width:800px){.navlinks{display:none}.hero{grid-template-columns:1fr;padding-top:30px;gap:25px}.visual{min-height:350px}.stats{margin-bottom:35px}.tasks,.steps{grid-template-columns:1fr 1fr}.trust{grid-template-columns:1fr}.docs{grid-template-columns:1fr}.hero p{font-size:16px}}
+    @media(max-width:540px){.wrap{width:min(100% - 28px,1120px)}.nav{padding:14px 0}.logo{font-size:16px}.nav-cta{font-size:12px;padding:9px 11px}.hero{padding:28px 0}.hero h1{letter-spacing:-1.4px}.visual{padding:16px;border-radius:22px;min-height:350px}.stats{gap:8px}.stat{padding:14px 11px}.stat strong{font-size:19px}.stat span{font-size:11px}.tasks,.steps{grid-template-columns:1fr}.section-head h2{font-size:27px}.trust{padding:23px}.trust h2{font-size:26px}.cta{padding:27px 18px}.footer{flex-direction:column}.float-note{right:13px;bottom:12px}}
+  </style>
+</head>
+<body>
+  <header class="wrap nav">
+    <a class="logo" href="#" aria-label="校园搭把手首页"><span class="logo-mark">✦</span>校园搭把手</a>
+    <nav class="navlinks" aria-label="主导航"><a href="#tasks">任务大厅</a><a href="#how">使用流程</a><a href="#trust">信用与安全</a><a href="#docs">项目文档</a></nav>
+    <a class="nav-cta" href="#tasks">探索任务 <span aria-hidden="true">↗</span></a>
+  </header>
+  <main>
+    <div class="wrap hero">
+      <div>
+        <span class="eyebrow"><span class="dot"></span> 为校园生活搭把手</span>
+        <h1>校园里的小事，<br><span class="gradient">有人愿意帮你。</span></h1>
+        <p>从代取快递到顺路带饭，把零散需求变成简单的互助任务。让求助更方便，让顺路的善意被看见。</p>
+        <div class="hero-actions"><a class="btn" href="#tasks">看看有什么任务 <span>→</span></a><a class="btn secondary" href="#how">了解平台如何运作</a></div>
+        <p class="fine">概念展示版本 · 示例任务仅用于说明产品体验，暂不提供真实接单服务。</p>
+      </div>
+      <div class="visual" aria-label="示例任务卡片">
+        <div class="mini-card">
+          <div class="mini-top"><span class="pill">📦 快递代取</span><span style="font-size:12px;color:#9298a8">约 10 分钟</span></div>
+          <h3>帮忙从驿站取一个包裹</h3><p>西区驿站 → 3 号宿舍楼 · 顺路优先</p>
+          <div class="mini-bottom"><span><span class="avatar">🙂</span>匿名同学 · 已验证（示例）</span><span class="price">¥5</span></div>
+        </div>
+        <div class="mini-card">
+          <div class="mini-top"><span class="pill" style="background:#e9f8f2;color:#16765f">🥤 顺路带物</span><span style="font-size:12px;color:#9298a8">今天 12:30 前</span></div>
+          <h3>食堂顺路带一杯饮料</h3><p>二食堂 → 图书馆一楼 · 可沟通细节</p>
+          <div class="mini-bottom"><span><span class="avatar" style="background:#d9f1e9">🌱</span>新手友好任务</span><span class="price">¥3</span></div>
+        </div>
+        <div class="float-note"><strong>互助有记录 ✓</strong>每次履约都值得被记住</div>
+      </div>
+    </div>
+    <div class="wrap stats" aria-label="产品设计目标">
+      <div class="stat"><strong>发布清晰</strong><span>地点、时间、报酬一目了然</span></div>
+      <div class="stat"><strong>顺路互助</strong><span>让校园里的时间更高效</span></div>
+      <div class="stat"><strong>信用沉淀</strong><span>用履约记录建立信任</span></div>
+    </div>
+    <section id="tasks">
+      <div class="wrap">
+        <div class="section-head"><h2>校园任务大厅</h2><p>先从身边的小事开始。以下为产品演示用的虚构任务，不代表真实需求或可接订单。</p></div>
+        <div class="tasks">
+          <article class="task"><div class="emoji">📦</div><h3>快递驿站代取</h3><p>从北区驿站取件，送至附近宿舍楼；需提前确认包裹信息。</p><div class="task-foot"><span>预计 10–15 分钟</span><strong>¥5</strong></div><div style="margin-top:12px"><span class="tag">示例任务</span></div></article>
+          <article class="task"><div class="emoji" style="background:#fff2df">🥡</div><h3>食堂顺路带饭</h3><p>午餐时段顺路帮忙带餐，费用与取餐方式需双方确认。</p><div class="task-foot"><span>预计 15–20 分钟</span><strong>¥4</strong></div><div style="margin-top:12px"><span class="tag">示例任务</span></div></article>
+          <article class="task"><div class="emoji" style="background:#e5f6ff">📚</div><h3>学习用品互助</h3><p>借送文具或打印材料等轻量任务，避免贵重物品与敏感资料。</p><div class="task-foot"><span>预计 5–10 分钟</span><strong>¥3</strong></div><div style="margin-top:12px"><span class="tag">示例任务</span></div></article>
+        </div>
+        <div class="notice">演示说明：目前“发布任务”和“接单”流程尚未连接真实服务。请勿将本页面当作真实交易平台，也不要上传联系方式、宿舍门牌等个人信息。</div>
+      </div>
+    </section>
+    <section id="how">
+      <div class="wrap">
+        <div class="section-head"><h2>三步完成一次互助</h2><p>把任务说清楚，把边界提前讲明白，让每一次协作都更顺畅。</p></div>
+        <div class="steps">
+          <article class="step"><div class="step-num">STEP 01</div><h3>发布任务</h3><p>描述任务内容、取送地点、期望时间与合理报酬；发布前确认物品与规则。</p></article>
+          <article class="step"><div class="step-num">STEP 02</div><h3>沟通并接单</h3><p>双方确认需求、费用和交付方式后再开始；不公开展示不必要的个人信息。</p></article>
+          <article class="step"><div class="step-num">STEP 03</div><h3>确认完成</h3><p>完成后由双方确认状态并提交评价；争议进入人工处理流程，而非自动定责。</p></article>
+        </div>
+      </div>
+    </section>
+    <section id="trust">
+      <div class="wrap trust">
+        <div><span class="eyebrow" style="background:#fff;color:#4b47c8">信任从规则开始</span><h2 style="margin-top:17px">互相帮忙，<br>也要保护好自己。</h2><p>信用不是简单的分数。清楚的规则、可追溯的订单状态和公平的争议处理，才是校园互助长期运行的基础。</p></div>
+        <div class="trust-list">
+          <div class="trust-item"><span class="check">✓</span><div><b>履约记录，而非单一评分</b><span>记录完成、取消和争议状态，避免一次评价决定全部信用。</span></div></div>
+          <div class="trust-item"><span class="check">✓</span><div><b>个人信息最小化</b><span>仅在必要环节展示完成任务所需的信息，并提供举报与屏蔽入口。</span></div></div>
+          <div class="trust-item"><span class="check">✓</span><div><b>明确禁止的任务</b><span>拒绝违法、危险、违规代购、代签或要求交付账号密码的任务。</span></div></div>
+          <div class="trust-item"><span class="check">✓</span><div><b>争议有处理路径</b><span>保留必要的订单操作记录，支持申诉与人工复核，不以自动评分代替判断。</span></div></div>
+        </div>
+      </div>
+    </section>
+    <section id="docs">
+      <div class="wrap">
+        <div class="section-head"><h2>从产品方案开始</h2><p>产品边界、核心流程和迭代计划公开记录，方便团队协作与持续完善。</p></div>
+        <div class="docs">
+          <article class="doc"><h3>📋 产品需求文档（PRD）</h3><p>包括项目背景、目标用户、需求范围、用户故事、订单状态、信用机制、异常处理和 MVP 验收标准。</p><a href="docs/PRD.md">阅读完整 PRD →</a></article>
+          <article class="doc"><h3>🧭 项目开发路线</h3><p>先完成静态展示与需求定义，再逐步添加交互原型、持久化后端、认证、举报和安全测试。</p><a href="https://github.com/Mingzior/campus-errand-platform">查看 GitHub 仓库 →</a></article>
+        </div>
+        <div class="cta"><h2>让校园互助变得更简单</h2><p>这是一个持续迭代中的产品概念项目，欢迎通过 GitHub Issues 提交建议。</p><a class="btn" href="https://github.com/Mingzior/campus-errand-platform/issues">提出建议 <span>↗</span></a></div>
+      </div>
+    </section>
+  </main>
+  <footer class="wrap footer"><span>© 校园搭把手 · Campus Errand</span><span>产品概念展示 · 当前版本不处理真实订单</span></footer>
+</body>
+</html>
